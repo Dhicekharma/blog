@@ -1,0 +1,39 @@
+<%- include("partials/header") -%>
+<h1>Home</h1>
+<p> <%=home %></p>
+
+
+<%new_post.forEach(function(post){%>
+
+    <h2> <%= post.postTitle%> </h2>
+   <p>
+        <%= post.postBody.substring(0,200)+". . ."%>
+    </p>
+   <a href="/post/<%= post.postTitle%>">Read more</a>
+   <% } )%>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%-include("partials/footer")-%>

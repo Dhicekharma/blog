@@ -1,0 +1,38 @@
+<%- include("partials/header") -%>
+
+
+
+
+<%for(let i=0;i < new_post.length;i++){%>
+<% if(new_title=== new_post[i].postTitle ){%>
+      <h2><%= new_post[i].postTitle%></h2>
+       <p><%= new_post[i].postBody%></p>
+
+<%}%>
+ 
+   <% } %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include("partials/footer" )-%>
